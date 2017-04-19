@@ -1729,4 +1729,39 @@ h2.page-title {
         font-size: 15px;
         line-height: 24px; } }
 
+/* contact block */
+.contact-block .heading {
+  min-height: 136px;
+  background: url("../images/bg-heading-contact.jpg") no-repeat 100% 100%; }
+  .contact-block .heading h2 {
+    font: 400 24px/1.3 'Noto Sans JP', sans-serif;
+    margin-bottom: 26px; }
+  .contact-block .heading h3 {
+    margin-bottom: 50px;
+    font: 300 16px/1.4 'Noto Sans JP', sans-serif; }
+
+.form {
+  margin-bottom: 20px; }
+  .form .table {
+    padding: 8px;
+    border: 1px solid #46b255;
+    overflow: hidden; }
+    .form .table table {
+      width: 100%;
+      border-collapse: collapse; }
+      .form .table table tr th {
+        border-top: 1px dotted #6c6c6c;
+        background: #f3f3f3;
+        padding: 15px 10px 15px 20px;
+        text-align: left;
+        font: 300 17px/35px 'Noto Sans JP', sans-serif;
+        width: 35%; }
+      .form .table table tr td {
+        border-top: 1px dotted #6c6c6c;
+        padding: 15px 10px 15px 20px;
+        font: 300 17px/35px 'Noto Sans JP', sans-serif; }
+      .form .table table tr:first-child th,
+      .form .table table tr:first-child td {
+        border: 0; }
+
 /* styles end */
