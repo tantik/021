@@ -1,0 +1,162 @@
+#footer:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.footer{
+	background: #46b255;
+	overflow: hidden;
+	padding: 0 10px;
+	.holder{
+		position: relative;
+		overflow: hidden;
+	}
+	ul{
+		float: right;
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		padding: 48px 0;
+		@media (max-width: 1000px){
+		  &{
+			font-size: 10px;
+		  }
+		}
+		li{
+			border-left: 1px solid #fff;
+			float: left;
+		}
+	 	li:last-child{border-right: 1px solid #fff;}
+		a{
+			color: #fff;
+			padding: 0 8px;
+			position: relative;
+			&:after{
+			 	@include fade(all);
+				content: '';
+				width: 0;
+				height: 0;
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+				border-bottom: 7px solid #ffec1e;
+				position: absolute;
+				bottom: -8px;
+				left: 50%;
+				margin-left: -6px;
+				opacity: 0;
+			}
+		  	&:hover:after{
+				opacity: 1;
+			}
+		}
+	}
+	@media only screen and (max-width: 736px){
+		&{
+			padding: 0;
+			margin-bottom: 50px;
+			overflow: visible;
+			.holder{overflow: visible}
+			ul{
+				float: none;
+				overflow: hidden;
+				padding: 0;
+				li{
+					width: 50%;
+					-moz-box-sizing:border-box;
+					-ms-box-sizing:border-box;
+					-webkit-box-sizing:border-box;
+					box-sizing:border-box;
+					border: 1px solid #fff;
+					border-width: 1px 0 0 1px;
+					a{
+						line-height: 40px;
+						font-size: 13px;
+						display: block;
+						overflow: hidden;
+						padding: 0 18px;
+					}
+				}
+			}
+		}
+	}
+}
+.logo-footer{
+	background: url('../images/logo-footer.png') no-repeat 0 50%;
+	width: 238px;
+	height: 43px;
+	overflow: hidden;
+	text-indent: -9999px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -22px;
+	a{
+		display: block;
+		position: relative;
+		height: 100%;
+	}
+	@media (max-width: 1000px){
+		&{
+		  width: 180px;
+		  background-size: 100% auto;
+		}
+	}
+	@media only screen and (max-width: 736px){
+		&{
+			position: absolute;
+			top:auto;
+			bottom: -50px;
+			left: 0;
+			width: 170px;
+			height: 50px;
+			background: url('../images/logo-footer-sp.png') no-repeat 50%;
+			background-size: 147px auto;
+		}
+	}
+}
+.copyright{
+	overflow: hidden;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 60px;
+	color: #46b255;
+	padding: 0 10px;
+	p{
+		margin: 0;
+		overflow: hidden;
+	}
+	ul{
+		float: right;
+		li{
+			float: left;
+			margin-left: 14px;
+		}
+		a{
+			font-family: 'Noto Sans JP', sans-serif;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 60px;
+			color: #46b255;
+			&:hover{
+			 	 text-decoration: underline;
+			}
+		}
+	}
+	@media only screen and (max-width: 736px){
+		&{
+			padding: 0;
+			p{
+				color: #333;
+				font-size: 9px;
+				line-height: 20px;
+				background: #f3f2ee;
+				text-align: center;
+			}
+			ul{
+				display: none;
+			}
+		}
+	}
+}

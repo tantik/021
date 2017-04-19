@@ -1,0 +1,142 @@
+.aside{
+	float: left;
+	width: 250px;
+	margin-right: 30px;
+	overflow: hidden;
+	.aside-item{
+		background: #fff;
+		border: 1px solid #52b760;
+		height: 113px;
+		overflow: hidden;
+		position: relative;
+		background: url('../images/bg-item01.png') no-repeat;
+		margin-bottom: 10px;
+		span{
+			position: absolute;
+			top: 20px;
+			left: 0;
+			right: 0;
+			text-align: center;
+			font-family: 'Noto Sans JP', sans-serif;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 24px;
+			color: #333;
+		}
+		strong{
+			position: absolute;
+			top: 50px;
+			left: 0;
+			right: 0;
+			text-align: center;
+			font-family: 'Noto Sans JP', sans-serif;
+			font-weight: 500;
+			font-size: 38px;
+			line-height: 40px;
+			color: #46b255;
+			i{
+				font-style: normal;
+				font-size: 20px;
+				color: #333;
+			}
+		}
+	}
+	.air-construction{
+		background: #fff;
+		border: 1px solid #52b760;
+		overflow: hidden;
+		margin-bottom: 10px;
+		padding: 0 10px 16px;
+		h2{
+			background: #f3f2ee;
+			margin: 0 -10px 14px;
+			text-align: center;
+			font-family: 'Noto Sans JP', sans-serif;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 40px;
+			color: #333;
+		}
+		p{
+			text-align: center;
+			font-family: 'Noto Sans JP', sans-serif;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 16px;
+			color: #333;
+			margin-bottom: 6px;
+		}
+		.phone{
+			@include fade(all);
+			display: block;
+			position: relative;
+			padding-left: 30px;
+			background: url('../images/icon-phone01.png') no-repeat 0 50%;
+			font-weight: 500;
+			font-size: 30px;
+			line-height: 46px;
+			color: #46b255;
+			border-bottom: 1px solid #333;
+			&:hover{color: #f3ab21;}
+		}
+		span{
+			display: block;
+			text-align: center;
+			font-family: 'Noto Sans JP', sans-serif;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 38px;
+			color: #333;
+		}
+	}
+	.aside-list{
+		overflow: hidden;
+		li{
+			margin-bottom: 11px;
+			a{
+				display: block;
+				background: #fff;
+				border: 1px solid #52b760;
+				position: relative;
+				img{
+					display: block;
+					width: 100%;
+				}
+				span{
+					@include box-flex;
+					@include center;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					padding: 0 0 0 20px;
+					font-family: HiraMaruPro-W4,"ヒラギノ角ゴ Pro W3",HiraKakuPro-W3,Osaka,sans-serif;
+					font-weight: 500;
+					font-size: 20px;
+					line-height: 26px;
+					&:after{
+						@include fade(all);
+						content: '';
+						position: absolute;
+						left: 6px;
+						top: 50%;
+						width: 0;
+						height: 0;
+						border-top: 5px solid transparent;
+						border-left: 6px solid #f3ab21;
+						border-bottom: 5px solid transparent;
+						margin-top: -5px;
+					}
+				}
+				&:hover span:after{left: 12px;}
+			}
+		}
+	}
+	@media only screen and (max-width: 736px){
+		&{
+			display: none;
+		}
+	}
+
+}

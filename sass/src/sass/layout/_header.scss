@@ -1,0 +1,413 @@
+#header{
+	position: fixed;
+	background: #fff;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	z-index: 100;
+	.top{
+		background: #f3f2ee;
+		font-family: "Lucida Sans Unicode","Lucida Grande",Arial,Helvetica,"ヒラギノ丸ゴ Pro W4",HiraMaruPro-W4,"ヒラギノ角ゴ Pro W3",HiraKakuPro-W3,Osaka,sans-serif;
+		font-size: 12px;
+		line-height: 25px;
+		color: #333;
+		padding: 0 10px;
+	}
+	.header{padding: 0 10px;}
+	.header .holder{
+		overflow: hidden;
+		position: relative;
+		height: 92px;
+	}
+	.logo{
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 268px;
+		background: url('../images/logo.png') no-repeat 50%;
+		overflow: hidden;
+		text-indent: -9999px;
+	& a{
+		display: block;
+		position: relative;
+		height: 100%;
+	  }
+	}
+	.header-mail{
+		position: absolute;
+		right: 0;
+		top: 15px;
+		background: #f3ab21;
+		overflow: hidden;
+		text-align: center;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		border-radius: 6px;
+		font-size: 16px;
+		line-height: 38px;
+		border-bottom: 4px solid #c98c16;
+		padding: 0 25px;
+		color: #fff;
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 400;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		transition: all 0.5s;
+		&:hover{
+			opacity: 0.8;
+			background: #f3ab21;
+			border-bottom: 4px solid #f3ab21;
+		}
+	}
+	.header-phone{
+		position: absolute;
+		right: 204px;
+		top: 10px;
+		text-decoration: none;
+		padding-left: 32px;
+	  & i{
+		@include fade(all);
+		font-style: normal;
+		font-size: 12px;
+		line-height: 14px;
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 400;
+		color: #46b255;
+		display: block;
+	  }
+	  & span{
+		@include fade(all);
+		font-size: 30px;
+		line-height: 32px;
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 500;
+		color: #46b255;
+		display: block;
+		padding-left: 32px;
+		position: relative;
+		margin-left: -32px;
+		background: url('../images/icon-phone01.png') no-repeat 0 50%;
+		margin-bottom: 2px;
+	  }
+	  & em{
+		font-style: normal;
+		font-size: 12px;
+		line-height: 14px;
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 300;
+		color: #333;
+		display: block;
+	  }
+	  &:hover i,
+	  &:hover span{color: #f3ab21;}
+	}
+	@media only screen and (max-width: 736px){
+		&{
+			overflow: visible;
+			border-bottom: 2px solid #46b255;
+			.top{
+				display: none;
+			}
+			.header{
+				padding: 0;
+			}
+			.header .holder{
+				height: 38px;
+			}
+			.logo{
+				width: 172px;
+				background: url('../images/logo-sp.png') no-repeat 50%;
+				background-size: 153px auto;
+			}
+			.header-mail{
+				right: 39px;
+				top: 0;
+				bottom: 0;
+				width: 40px;
+				overflow: hidden;
+				border: 0;
+				padding: 24px 0 0;
+				background: none;
+				-moz-border-radius: 0;
+				-webkit-border-radius: 0;
+				border-radius: 0;
+				font-size: 9px;
+				line-height: 11px;
+				color: #46b255;
+				text-align: center;
+				& span{display: none;}
+				&:hover{
+					background: none;
+					opacity:1;
+				}
+				&:after{
+					content: "";
+					position: absolute;
+					top: 4px;
+					left: 0;
+					right: 0;
+					height: 18px;
+					background: url('../images/icon-mail.png') no-repeat 50%;
+					background-size: 18px;
+				}
+			}
+			.header-phone{
+				right: 80px;
+				top: 0;
+				bottom: 0;
+				width: 30px;
+				padding: 24px 0 0;
+				& i{
+					display: none;
+				}
+				& span{
+					display: none;
+				}
+				& em{
+					display: none;
+				}
+				&:after{
+					content: "";
+					position: absolute;
+					top: 4px;
+					left: 0;
+					right: 0;
+					height: 18px;
+					background: url('../images/icon-phone02.png') no-repeat 50%;
+					background-size: 18px;
+				}
+				&:before{
+					content: "電話";
+					display: block;
+					font-size: 9px;
+					line-height: 11px;
+					color: #46b255;
+					text-align: center;
+				}
+			}
+			.mobile-opener{
+				position: absolute;
+				right: 7px;
+				top: 0;
+				bottom: 0;
+				width: 30px;
+				outline:none;
+				-webkit-transition: background .3s;
+				transition: background .3s;
+				opacity:1 !important;
+				overflow:hidden;
+				text-align:center;
+				font-size: 9px;
+				line-height: 11px;
+				color: #46b255;
+				text-transform:uppercase;
+				text-decoration:none;
+				padding: 24px 0 0;
+				& i,
+				& em{font-style: normal}
+				& em{display: none;}
+				.nav-visible & i{display: none;}
+				.nav-visible & em{display: block;}
+				& span{
+					display: block;
+					position: absolute;
+					top: 12px;
+					left: 4px;
+					right: 4px;
+					height: 2px;
+					background: #46b255;
+					-webkit-transition: background 0s .3s;
+					transition: background 0s .3s;
+					&:after,
+					&:before{
+						-webkit-transition-duration: .3s,.3s;
+						transition-duration: .3s,.3s;
+						-webkit-transition-delay: .3s,0s;
+						transition-delay: .3s,0s;
+						position: absolute;
+						display: block;
+						left: 0;
+						width: 100%;
+						height: 2px;
+						background-color: #46b255;
+						content: "";
+					}
+					&:before{
+						-webkit-transition-property: top,-webkit-transform;
+						transition-property: top,transform;
+						top:-5px;
+					}
+					&:after{
+						-webkit-transition-property: bottom,-webkit-transform;
+						transition-property: bottom,transform;
+						bottom: -5px;
+					}
+					.nav-visible &{background: 0 0;}
+					.nav-visible &:after,
+					.nav-visible &:before{
+						-webkit-transition-delay: 0s,.3s;
+						transition-delay: 0s,.3s;
+					}
+					.nav-visible &:before{
+						top: 0;
+						-webkit-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						transform: rotate(45deg);
+						background:#46b255;
+					}
+					.nav-visible &:after{
+						bottom: 0;
+						-webkit-transform: rotate(-45deg);
+						-ms-transform: rotate(-45deg);
+						transform: rotate(-45deg);
+						background:#46b255;
+					}
+				}
+			}
+		}
+	}
+}
+.nav{
+	overflow: hidden;
+	background: #46b255;
+	ul{
+		margin: 0 auto;
+		max-width: 980px;
+		overflow: hidden;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: space-between;
+		-moz-justify-content: space-between;
+		-ms-justify-content: space-between;
+		justify-content: space-between;
+		li{
+			position: relative;
+			width: 100%;
+		}
+		li:after{
+			 content: '';
+			 position: absolute;
+			 top: 11px;
+			 bottom: 11px;
+			 left: 0;
+			 border-left: 1px solid #fff;
+		 }
+		li:last-child:before{
+			content: '';
+			position: absolute;
+			top: 11px;
+			bottom: 11px;
+			right: 0;
+			border-left: 1px solid #fff;
+		}
+		a{
+			font-family: 'Noto Sans JP', sans-serif;
+			font-weight: 400;
+			color: #fff;
+			font-size: 16px;
+			line-height: 50px;
+			position: relative;
+			text-align: center;
+			display: block;
+			@media (max-width: 1000px){
+				font-size: 12px;
+			}
+			&:after{
+			  @include fade(all);
+			  content: '';
+			  width: 0;
+			  height: 0;
+			  border-left: 6px solid transparent;
+			  border-right: 6px solid transparent;
+			  border-bottom: 7px solid #ffec1e;
+			  position: absolute;
+			  bottom: -10px;
+			  left: 50%;
+			  margin-left: -6px;
+			}
+			&:hover:after,
+			&.active:after{
+				bottom: 5px;
+			}
+		}
+	}
+	@media only screen and (max-width: 736px){
+		&{
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			box-shadow:0 1px 2px rgba(0, 0, 0, .3);
+			ul{
+				display: block;
+				padding: 18px 9px;
+				li{
+					border-top: 1px solid #90d199;
+					&:first-child{
+						border: 0;
+					}
+				}
+				li:after,
+				li:before{
+					display: none;
+				}
+				a{
+					font-size: 15px;
+					line-height: 35px;
+				}
+				a:after{
+					display: none;
+				}
+			}
+			.close-nav{
+				display: block;
+				background: #fff;
+				overflow: hidden;
+				font-size: 11px;
+				line-height: 35px;
+				text-align: center;
+				& span{
+					display: inline-block;
+					vertical-align: top;
+					padding-left: 24px;
+					position: relative;
+					&:after,
+					&:before{
+						position: absolute;
+						display: block;
+						left: 0;
+						width: 18px;
+						height: 2px;
+						background-color: #46b255;
+						content: "";
+						top: 50%;
+					}
+					&:before{
+						-webkit-transition-property: top,-webkit-transform;
+						transition-property: top,transform;
+						-webkit-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						transform: rotate(45deg);
+						background:#46b255;
+					}
+					&:after{
+						-webkit-transition-property: bottom,-webkit-transform;
+						transition-property: bottom,transform;
+						-webkit-transform: rotate(-45deg);
+						-ms-transform: rotate(-45deg);
+						transform: rotate(-45deg);
+						background:#46b255;
+					}
+				}
+			}
+		}
+	}
+}
