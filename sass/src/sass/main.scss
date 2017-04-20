@@ -1074,6 +1074,13 @@ h2.page-title{
 			line-height: 32px;
 		}
 	}
+	&.privacy{
+		background: url('../images/icon-privacy.png') no-repeat 16px 50%;
+		@media only screen and (max-width: 736px) {
+			line-height: 32px;
+		}
+	}
+
 
 
 
@@ -1673,8 +1680,45 @@ select{
 		}
 	}
 }
+/* privacy block */
+.privacy-block{
+	margin-bottom: 20px;
+	padding: 23px 20px 0;
+	border: 1px solid #46b255;
+	font: 400 16px/30px 'Noto Sans JP', sans-serif;
+	overflow: hidden;
+	p{
+		margin: 0 0 30px;
+		&.last{
+			margin-bottom: 23px;
+		}
+	}
+	h3{
+		font: 600 16px/30px 'Noto Sans JP', sans-serif;
+	}
+	a{
+		color: #333;
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	@media only screen and (max-width: 736px) {
+		padding: 10px 10px 0;
+		font-size: 13px;
+		line-height: 20px;
+		p{
+			margin-bottom: 20px;
+			&.last{
+				margin-bottom: 15px;
+			}
+		}
+		h3{
+			font-size: 13px;
+		}
 
-
+	}
+}
 
 
 

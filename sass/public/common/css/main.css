@@ -1653,6 +1653,11 @@ h2.page-title {
     @media only screen and (max-width: 736px) {
       h2.page-title.profile {
         line-height: 32px; } }
+  h2.page-title.privacy {
+    background: url("../images/icon-privacy.png") no-repeat 16px 50%; }
+    @media only screen and (max-width: 736px) {
+      h2.page-title.privacy {
+        line-height: 32px; } }
 
 /* customers list */
 .customers-list {
@@ -2148,5 +2153,35 @@ select {
           border: 0; }
       .profile-block .map iframe {
         height: 300px !important; } }
+
+/* privacy block */
+.privacy-block {
+  margin-bottom: 20px;
+  padding: 23px 20px 0;
+  border: 1px solid #46b255;
+  font: 400 16px/30px 'Noto Sans JP', sans-serif;
+  overflow: hidden; }
+  .privacy-block p {
+    margin: 0 0 30px; }
+    .privacy-block p.last {
+      margin-bottom: 23px; }
+  .privacy-block h3 {
+    font: 600 16px/30px 'Noto Sans JP', sans-serif; }
+  .privacy-block a {
+    color: #333;
+    text-decoration: underline; }
+    .privacy-block a:hover {
+      text-decoration: none; }
+  @media only screen and (max-width: 736px) {
+    .privacy-block {
+      padding: 10px 10px 0;
+      font-size: 13px;
+      line-height: 20px; }
+      .privacy-block p {
+        margin-bottom: 20px; }
+        .privacy-block p.last {
+          margin-bottom: 15px; }
+      .privacy-block h3 {
+        font-size: 13px; } }
 
 /* styles end */

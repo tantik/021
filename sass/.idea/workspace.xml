@@ -17,14 +17,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4633632">
+    <splitter split-orientation="horizontal" split-proportion="0.5224038">
       <split-first>
         <leaf>
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="316">
-                  <caret line="1655" column="47" lean-forward="true" selection-start-line="1655" selection-start-column="47" selection-end-line="1655" selection-end-column="47" />
+                <state relative-caret-position="765">
+                  <caret line="1712" column="33" lean-forward="false" selection-start-line="1712" selection-start-column="33" selection-end-line="1712" selection-end-column="33" />
                   <folding>
                     <element signature="e#4114#4534#0" expanded="false" />
                     <element signature="e#7117#7299#0" expanded="false" />
@@ -48,7 +48,7 @@
           <file leaf-file-name="_reset.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/sass/helpers/_reset.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
+                <state relative-caret-position="360">
                   <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="31" />
                   <folding />
                 </state>
@@ -79,14 +79,24 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/profile/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1020">
-                  <caret line="132" column="24" lean-forward="false" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
+                <state relative-caret-position="404">
+                  <caret line="226" column="36" lean-forward="false" selection-start-line="226" selection-start-column="36" selection-end-line="226" selection-end-column="50" />
                   <folding>
                     <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/privacy_policy/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="440">
+                  <caret line="131" column="38" lean-forward="false" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -108,7 +118,6 @@
       <find>.contact-block</find>
       <find>colums-list-promo</find>
       <find>.banner</find>
-      <find>page-title</find>
       <find>aside-list</find>
       <find>.aside</find>
       <find>パックメニュー</find>
@@ -116,6 +125,7 @@
       <find>お客様の声</find>
       <find>サイトマップ</find>
       <find>会社案内</find>
+      <find>page-title</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -136,6 +146,7 @@
         <option value="$PROJECT_DIR$/src/site_map/index.html" />
         <option value="$PROJECT_DIR$/src/pack/index.html" />
         <option value="$PROJECT_DIR$/src/profile/index.html" />
+        <option value="$PROJECT_DIR$/src/privacy_policy/index.html" />
         <option value="$PROJECT_DIR$/src/sass/main.scss" />
       </list>
     </option>
@@ -293,6 +304,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="privacy_policy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="customers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -425,12 +454,12 @@
       <workItem from="1492517748205" duration="2052000" />
       <workItem from="1492522652090" duration="1207000" />
       <workItem from="1492589390045" duration="11710000" />
-      <workItem from="1492672434796" duration="16672000" />
+      <workItem from="1492672434796" duration="19065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87490000" />
+    <option name="totallyTimeSpent" value="89883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -632,14 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/helpers/_reset.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/helpers/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -696,10 +717,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/profile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="226" column="36" lean-forward="false" selection-start-line="226" selection-start-column="36" selection-end-line="226" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/helpers/_reset.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/privacy_policy/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="131" column="38" lean-forward="false" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="1655" column="47" lean-forward="true" selection-start-line="1655" selection-start-column="47" selection-end-line="1655" selection-end-column="47" />
+        <state relative-caret-position="765">
+          <caret line="1712" column="33" lean-forward="false" selection-start-line="1712" selection-start-column="33" selection-end-line="1712" selection-end-column="33" />
           <folding>
             <element signature="e#4114#4534#0" expanded="false" />
             <element signature="e#7117#7299#0" expanded="false" />
@@ -715,16 +762,6 @@
             <element signature="e#16364#16569#0" expanded="false" />
             <element signature="e#16614#17039#0" expanded="false" />
             <element signature="e#17083#17937#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/profile/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="132" column="24" lean-forward="false" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
