@@ -1062,6 +1062,15 @@ h2.page-title{
 			background-size: 32px 22px;
 		}
 	}
+	&.sitemap{
+		background: url('../images/icon-sitemap.png') no-repeat 13px 50%;
+		@media only screen and (max-width: 736px) {
+			line-height: 32px;
+		}
+	}
+
+
+
 
 
 
@@ -1529,6 +1538,63 @@ select{
 		margin-bottom: 15px;
 	}
 }
+/* site map */
+.site-map{
+	list-style: none;
+	margin-bottom: 40px;
+	padding: 43px 30px 5px 60px;
+	border: 1px solid #46b255;
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	font: 300 16px/24px 'Noto Sans JP', sans-serif;
+	overflow: hidden;
+	li{
+		padding: 0 10px 40px 0;
+		width: 50%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		a{
+			display: inline-block;
+			vertical-align: top;
+			padding-left: 18px;
+			position: relative;
+			color: #333;
+			-webkit-transition: opacity 0.5s ease;
+			-moz-transition: opacity 0.5s ease;
+			-o-transition: opacity 0.5s ease;
+			transition: opacity 0.5s ease;
+			&:after{
+				content: '';
+				position: absolute;
+				top: 5px;
+				left: 0;
+				width: 14px;
+				height: 14px;
+				background: #46b255;
+			}
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+	}
+	@media only screen and (max-width: 1000px) {
+		padding: 38px 10px 0 20px;
+	}
+	@media only screen and (max-width: 736px) {
+		padding: 20px 20px 0;
+		margin-bottom: 30px;
+		li{
+			padding: 0 0 20px;
+			width: 100%;
+		}
+	}
+}
+
 
 
 

@@ -684,6 +684,7 @@ input, select {
       line-height: 38px;
       color: #333; }
   .aside .aside-list {
+    margin-bottom: 19px;
     overflow: hidden; }
     .aside .aside-list li {
       margin-bottom: 11px; }
@@ -1642,6 +1643,11 @@ h2.page-title {
       h2.page-title.pack {
         line-height: 32px;
         background-size: 32px 22px; } }
+  h2.page-title.sitemap {
+    background: url("../images/icon-sitemap.png") no-repeat 13px 50%; }
+    @media only screen and (max-width: 736px) {
+      h2.page-title.sitemap {
+        line-height: 32px; } }
 
 /* customers list */
 .customers-list {
@@ -2033,5 +2039,52 @@ select {
     .notes-txt {
       font-size: 13px;
       margin-bottom: 15px; } }
+
+/* site map */
+.site-map {
+  list-style: none;
+  margin-bottom: 40px;
+  padding: 43px 30px 5px 60px;
+  border: 1px solid #46b255;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font: 300 16px/24px 'Noto Sans JP', sans-serif;
+  overflow: hidden; }
+  .site-map li {
+    padding: 0 10px 40px 0;
+    width: 50%;
+    box-sizing: border-box; }
+    .site-map li a {
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 18px;
+      position: relative;
+      color: #333;
+      -webkit-transition: opacity 0.5s ease;
+      transition: opacity 0.5s ease; }
+      .site-map li a:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 14px;
+        height: 14px;
+        background: #46b255; }
+      .site-map li a:hover {
+        opacity: 0.8; }
+  @media only screen and (max-width: 1000px) {
+    .site-map {
+      padding: 38px 10px 0 20px; } }
+  @media only screen and (max-width: 736px) {
+    .site-map {
+      padding: 20px 20px 0;
+      margin-bottom: 30px; }
+      .site-map li {
+        padding: 0 0 20px;
+        width: 100%; } }
 
 /* styles end */
