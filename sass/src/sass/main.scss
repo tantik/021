@@ -1042,6 +1042,8 @@ h2.page-title{
 		background: url('../images/icon-contact.png') no-repeat 7px 50%;
 		@media only screen and (max-width: 736px) {
 			line-height: 32px;
+			-webkit-background-size: 30px 22px;
+			background-size: 30px 22px;
 		}
 	}
 
@@ -1178,6 +1180,7 @@ h2.page-title{
 .contact-block{
 	.heading{
 		min-height: 136px;
+		overflow: hidden;
 		background: url('../images/bg-heading-contact.jpg') no-repeat 100% 100%;
 		h2{
 			font: 400 24px/1.3 'Noto Sans JP', sans-serif;
@@ -1188,10 +1191,28 @@ h2.page-title{
 			font: 300 16px/1.4 'Noto Sans JP', sans-serif;
 		}
 	}
+	@media only screen and (max-width: 736px) {
+		.heading{
+			min-height: 125px;
+			-webkit-background-size: 73px 68px;
+			background-size: 73px 68px;
+			h2{
+				font-size: 20px;
+				margin-bottom: 10px;
+			}
+			h3{
+				font-size: 14px;
+				margin-bottom: 15px;
+			}
+		}
+
+	}
 }
 .form{
 	margin-bottom: 20px;
+	overflow: hidden;
 	.table{
+		margin-bottom: 22px;
 		padding: 8px;
 		border: 1px solid #46b255;
 		overflow: hidden;
@@ -1202,15 +1223,39 @@ h2.page-title{
 				th{
 					border-top: 1px dotted #6c6c6c;
 					background: #f3f3f3;
-					padding: 15px 10px 15px 20px;
+					padding: 15px 10px 15px 18px;
 					text-align: left;
-					font: 300 17px/35px 'Noto Sans JP', sans-serif;
-					width: 35%;
+					vertical-align: top;
+					font: 300 17px/20px 'Noto Sans JP', sans-serif;
+					width: 32%;
+					i{
+						display: inline-block;
+						vertical-align: top;
+						font: 600 12px/18px 'Noto Sans JP', sans-serif;
+						margin: 1px 0 0 5px;
+						padding: 0 4px;
+						color: #fff;
+						background: #e64141;
+					}
+					label.mid{
+						display: inline-block;
+						vertical-align: top;
+						padding: 8px 0 9px;
+					}
 				}
 				td{
 					border-top: 1px dotted #6c6c6c;
-					padding: 15px 10px 15px 20px;
+					padding: 15px 42px 15px 20px;
 					font: 300 17px/35px 'Noto Sans JP', sans-serif;
+					span.txt{
+						float: left;
+						line-height: 35px;
+						padding: 0 9px 0 7px;
+					}
+					.hold{overflow: hidden;}
+					select{
+						min-width: 193px;
+					}
 				}
 				&:first-child th,
 				&:first-child td{
@@ -1219,8 +1264,239 @@ h2.page-title{
 			}
 		}
 	}
+	@media only screen and (max-width: 736px) {
+		.table{
+			padding: 10px;
+			table{
+				display: block;
+				tbody{
+					display: block;
+				}
+				tr{
+					display: block;
+					th{
+						display: block;
+						width: 100%;
+						-webkit-box-sizing: border-box;
+						-moz-box-sizing: border-box;
+						box-sizing: border-box;
+						padding: 7px;
+						border: 0;
+						font-size: 15px;
+						label.mid{
+							padding: 0;
+						}
+					}
+					td{
+						display: block;
+						padding: 10px 0 30px;
+						border: 0;
+						font-size: 15px;
+					}
+				}
+			}
+		}
+	}
 }
-
+input.text,
+textarea{
+	-webkit-appearance: none;
+	appearance: none;
+	vertical-align: top;
+	width: 100%;
+	border: 1px solid #c6c6c6;
+	background: #f7f7f7;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	font: 300 17px/23px 'Noto Sans JP', sans-serif;
+	height: 35px;
+	padding: 5px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+	&.short{
+		width: 193px;
+	}
+	&:-moz-placeholder{color:#ccc;}
+	&::-moz-placeholder{color:#ccc;}
+	&::-webkit-input-placeholder{color:#ccc;}
+	&:-ms-input-placeholder{color:#ccc;}
+	&::placeholder{color:#ccc;}
+	@media only screen and (max-width: 736px) {
+		font-size: 15px;
+	}
+}
+textarea{
+	height: 140px;
+	width: 100% !important;
+	overflow: auto;
+}
+select{
+	-webkit-appearance: none;
+	appearance: none;
+	outline: none;
+	border: 1px solid #c6c6c6;
+	font: 300 17px/33px 'Noto Sans JP', sans-serif;
+	height: 35px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	padding: 0 25px 0 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #f7f7f7 url('../images/arrow-select.png') no-repeat 100% 50%;
+	@media only screen and (max-width: 736px) {
+		font-size: 15px;
+	}
+}
+.check-list{
+	list-style: none;
+	li{
+		margin-bottom: 10px;
+		overflow: hidden;
+		&:last-child{margin-bottom: 0;}
+		position: relative;
+		line-height: 20px;
+	}
+	label{
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		padding-left: 26px;
+		font: 300 17px/20px 'Noto Sans JP', sans-serif;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 20px;
+			background: url('../images/bg-checkbox.png') no-repeat;
+			overflow: hidden;
+		}
+	}
+	input[type="checkbox"]:checked + label:after{
+		background-position: 0 -20px;
+	}
+	input[type="checkbox"]{
+		-webkit-appearance: none;
+		appearance: none;
+		margin: 0;
+		padding: 0;
+		background: none;
+		border: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		opacity: 0;
+	}
+	@media only screen and (max-width: 736px) {
+		padding-left: 7px;
+		label{
+			font-size: 15px;
+		}
+	}
+}
+.check-row{
+	margin-bottom: 47px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	line-height: 20px;
+	input[type="checkbox"]{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 20px;
+		height: 20px;
+		margin: 0 0 0 -10px;
+		padding: 0;
+		opacity: 0;
+	}
+	label{
+		display: inline-block;
+		vertical-align: top;
+		padding-left: 30px;
+		position: relative;
+		font: 300 17px/20px 'Noto Sans JP', sans-serif;
+		a{
+			color: #333;
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 20px;
+			background: url('../images/bg-checkbox.png') no-repeat;
+			overflow: hidden;
+		}
+	}
+	input[type="checkbox"]:checked + label:after{
+		background-position: 0 -20px;
+	}
+	@media only screen and (max-width: 736px) {
+		margin-bottom: 30px;
+		label{
+			font-size: 15px;
+		}
+	}
+}
+#post_form_success {
+	text-align: center;
+	padding: 10px;
+	overflow: hidden;
+	background: #fde5d8;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #000;
+	display: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.button-send-holder{
+	margin-bottom: 31px;
+	text-align: center;
+	input.btn-send{
+		-webkit-appearance: none;
+		appearance: none;
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+		display: block;
+		min-width: 291px;
+		font: 500 22px/57px 'Noto Sans JP', sans-serif;
+		border: 4px #34883c solid;
+		border-width: 0 0 4px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		background: #46b255;
+		color: #fff;
+		outline: none;
+		cursor: pointer;
+	}
+	@media only screen and (max-width: 736px) {
+		margin-bottom: 20px;
+		input.btn-send{
+			font-size: 20px;
+			line-height: 40px;
+			min-width: 200px;
+		}
+	}
+}
 
 
 

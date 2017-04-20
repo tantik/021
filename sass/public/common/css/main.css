@@ -1627,7 +1627,8 @@ h2.page-title {
     background: url("../images/icon-contact.png") no-repeat 7px 50%; }
     @media only screen and (max-width: 736px) {
       h2.page-title.contact {
-        line-height: 32px; } }
+        line-height: 32px;
+        background-size: 30px 22px; } }
 
 /* customers list */
 .customers-list {
@@ -1732,6 +1733,7 @@ h2.page-title {
 /* contact block */
 .contact-block .heading {
   min-height: 136px;
+  overflow: hidden;
   background: url("../images/bg-heading-contact.jpg") no-repeat 100% 100%; }
   .contact-block .heading h2 {
     font: 400 24px/1.3 'Noto Sans JP', sans-serif;
@@ -1740,9 +1742,22 @@ h2.page-title {
     margin-bottom: 50px;
     font: 300 16px/1.4 'Noto Sans JP', sans-serif; }
 
+@media only screen and (max-width: 736px) {
+  .contact-block .heading {
+    min-height: 125px;
+    background-size: 73px 68px; }
+    .contact-block .heading h2 {
+      font-size: 20px;
+      margin-bottom: 10px; }
+    .contact-block .heading h3 {
+      font-size: 14px;
+      margin-bottom: 15px; } }
+
 .form {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  overflow: hidden; }
   .form .table {
+    margin-bottom: 22px;
     padding: 8px;
     border: 1px solid #46b255;
     overflow: hidden; }
@@ -1752,16 +1767,245 @@ h2.page-title {
       .form .table table tr th {
         border-top: 1px dotted #6c6c6c;
         background: #f3f3f3;
-        padding: 15px 10px 15px 20px;
+        padding: 15px 10px 15px 18px;
         text-align: left;
-        font: 300 17px/35px 'Noto Sans JP', sans-serif;
-        width: 35%; }
+        vertical-align: top;
+        font: 300 17px/20px 'Noto Sans JP', sans-serif;
+        width: 32%; }
+        .form .table table tr th i {
+          display: inline-block;
+          vertical-align: top;
+          font: 600 12px/18px 'Noto Sans JP', sans-serif;
+          margin: 1px 0 0 5px;
+          padding: 0 4px;
+          color: #fff;
+          background: #e64141; }
+        .form .table table tr th label.mid {
+          display: inline-block;
+          vertical-align: top;
+          padding: 8px 0 9px; }
       .form .table table tr td {
         border-top: 1px dotted #6c6c6c;
-        padding: 15px 10px 15px 20px;
+        padding: 15px 42px 15px 20px;
         font: 300 17px/35px 'Noto Sans JP', sans-serif; }
+        .form .table table tr td span.txt {
+          float: left;
+          line-height: 35px;
+          padding: 0 9px 0 7px; }
+        .form .table table tr td .hold {
+          overflow: hidden; }
+        .form .table table tr td select {
+          min-width: 193px; }
       .form .table table tr:first-child th,
       .form .table table tr:first-child td {
         border: 0; }
+  @media only screen and (max-width: 736px) {
+    .form .table {
+      padding: 10px; }
+      .form .table table {
+        display: block; }
+        .form .table table tbody {
+          display: block; }
+        .form .table table tr {
+          display: block; }
+          .form .table table tr th {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 7px;
+            border: 0;
+            font-size: 15px; }
+            .form .table table tr th label.mid {
+              padding: 0; }
+          .form .table table tr td {
+            display: block;
+            padding: 10px 0 30px;
+            border: 0;
+            font-size: 15px; } }
+
+input.text,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: top;
+  width: 100%;
+  border: 1px solid #c6c6c6;
+  background: #f7f7f7;
+  border-radius: 0;
+  font: 300 17px/23px 'Noto Sans JP', sans-serif;
+  height: 35px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  outline: none; }
+  input.text.short,
+  textarea.short {
+    width: 193px; }
+  input.text::-moz-placeholder,
+  textarea::-moz-placeholder {
+    color: #ccc; }
+  input.text::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: #ccc; }
+  input.text:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: #ccc; }
+  input.text::placeholder,
+  textarea::placeholder {
+    color: #ccc; }
+  @media only screen and (max-width: 736px) {
+    input.text,
+    textarea {
+      font-size: 15px; } }
+
+textarea {
+  height: 140px;
+  width: 100% !important;
+  overflow: auto; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  outline: none;
+  border: 1px solid #c6c6c6;
+  font: 300 17px/33px 'Noto Sans JP', sans-serif;
+  height: 35px;
+  border-radius: 0;
+  padding: 0 25px 0 10px;
+  box-sizing: border-box;
+  background: #f7f7f7 url("../images/arrow-select.png") no-repeat 100% 50%; }
+  @media only screen and (max-width: 736px) {
+    select {
+      font-size: 15px; } }
+
+.check-list {
+  list-style: none; }
+  .check-list li {
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    line-height: 20px; }
+    .check-list li:last-child {
+      margin-bottom: 0; }
+  .check-list label {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-left: 26px;
+    font: 300 17px/20px 'Noto Sans JP', sans-serif; }
+    .check-list label:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background: url("../images/bg-checkbox.png") no-repeat;
+      overflow: hidden; }
+  .check-list input[type="checkbox"]:checked + label:after {
+    background-position: 0 -20px; }
+  .check-list input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0; }
+  @media only screen and (max-width: 736px) {
+    .check-list {
+      padding-left: 7px; }
+      .check-list label {
+        font-size: 15px; } }
+
+.check-row {
+  margin-bottom: 47px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  line-height: 20px; }
+  .check-row input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 -10px;
+    padding: 0;
+    opacity: 0; }
+  .check-row label {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    position: relative;
+    font: 300 17px/20px 'Noto Sans JP', sans-serif; }
+    .check-row label a {
+      color: #333;
+      text-decoration: underline; }
+      .check-row label a:hover {
+        text-decoration: none; }
+    .check-row label:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background: url("../images/bg-checkbox.png") no-repeat;
+      overflow: hidden; }
+  .check-row input[type="checkbox"]:checked + label:after {
+    background-position: 0 -20px; }
+  @media only screen and (max-width: 736px) {
+    .check-row {
+      margin-bottom: 30px; }
+      .check-row label {
+        font-size: 15px; } }
+
+#post_form_success {
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+  background: #fde5d8;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000;
+  display: none;
+  border-radius: 5px; }
+
+.button-send-holder {
+  margin-bottom: 31px;
+  text-align: center; }
+  .button-send-holder input.btn-send {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    display: block;
+    min-width: 291px;
+    font: 500 22px/57px 'Noto Sans JP', sans-serif;
+    border: 4px #34883c solid;
+    border-width: 0 0 4px;
+    border-radius: 5px;
+    background: #46b255;
+    color: #fff;
+    outline: none;
+    cursor: pointer; }
+  @media only screen and (max-width: 736px) {
+    .button-send-holder {
+      margin-bottom: 20px; }
+      .button-send-holder input.btn-send {
+        font-size: 20px;
+        line-height: 40px;
+        min-width: 200px; } }
 
 /* styles end */

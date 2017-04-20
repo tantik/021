@@ -178,7 +178,7 @@
 											</tr>
 											<tr>
 												<th>
-													<label for="input01">お名前 <i>必須</i></label>
+													<label class="mid" for="input01">お名前 <i>必須</i></label>
 												</th>
 												<td>
 													<input required name="name" tabindex="11" id="input01" class="text" type="text" placeholder="山田　太郎" value="" />
@@ -186,7 +186,7 @@
 											</tr>
 											<tr>
 												<th>
-													<label for="input02">フリガナ <i>必須</i></label>
+													<label class="mid" for="input02">フリガナ <i>必須</i></label>
 												</th>
 												<td>
 													<input required name="phonetic" tabindex="12" id="input02" class="text" type="text" placeholder="ヤマダ　タロウ" value="" />
@@ -194,7 +194,7 @@
 											</tr>
 											<tr>
 												<th>
-													<label for="input03">メールアドレス <i>必須</i></label>
+													<label class="mid" for="input03">メールアドレス <i>必須</i></label>
 												</th>
 												<td>
 													<input required name="mail" tabindex="13" id="input03" class="text" type="email" placeholder="info@aircon-25.com" value="" />
@@ -202,7 +202,7 @@
 											</tr>
 											<tr>
 												<th>
-													<label for="input04">電話番号</label>
+													<label class="mid" for="input04">電話番号</label>
 												</th>
 												<td>
 													<input required name="tel" tabindex="14" id="input04" class="text" type="tel" placeholder="000-000-000" value="" />
@@ -210,21 +210,23 @@
 											</tr>
 											<tr>
 												<th>
-													<label for="input05">郵便番号</label>
+													<label class="mid" for="input05">郵便番号</label>
 												</th>
 												<td>
 													<span class="txt">〒</span>
+													<div class="hold">
 													<input name="postal" tabindex="15" id="input05" class="text short" type="text" placeholder="0000000" value="" />
+													</div>
 												</td>
 											</tr>
 											<tr>
 												<th>
-													<label for="select">都道府県 <i>必須</i></label>
+													<label class="mid" for="select">都道府県 <i>必須</i></label>
 												</th>
 												<td>
 													<div class="select">
 														<select name="add" tabindex="16" id="select">
-															<option selected="selected">選択ください</option>
+															<option selected="selected">選択してください</option>
 															<option value="北海道">北海道</option>
 															<option value="青森県">青森県</option>
 															<option value="岩手県">岩手県</option>
@@ -278,7 +280,7 @@
 											</tr>
 											<tr>
 												<th>
-													<label for="input06">住所</label>
+													<label class="mid" for="input06">住所</label>
 												</th>
 												<td>
 													<input required name="address" tabindex="17" id="input06" class="text" type="text" placeholder="京都市南区上鳥羽那須野町21-4" value="" />
@@ -286,7 +288,7 @@
 											</tr>
 											<tr>
 												<th>
-													<label for="comment">お問い合わせ内容 <i>必須</i></label>
+													<label class="mid" for="comment">お問い合わせ内容 <i>必須</i></label>
 												</th>
 												<td>
 													<textarea name="msg" tabindex="19" accesskey="x" placeholder="お問い合わせ内容をご入力ください" id="comment" cols="30" rows="10" aria-invalid="false"></textarea>
@@ -294,11 +296,13 @@
 											</tr>
 										</table>
 									</div>
-									<div class="row bottom">
+									<div class="check-row">
 										<input tabindex="19" id="check11" type="checkbox" value="" />
-										<p><a href="#">個人情報保護方針</a>に同意する</p>
+										<label for="check11"><a href="#">個人情報保護方針</a>に同意する</label>
 									</div>
-									<span class="btn"><input class="btn-send" type="submit" title="送信する" value="送信する" ><span>送信する</span></span>
+									<div class="button-send-holder">
+										<input class="btn-send" type="submit" title="送信する" value="送信する"  />
+									</div>
 								</fieldset>
 							</form>
 							<div id="post_form_success">ありがとうございます。 <br>予約フォームが送信されました。</div>
