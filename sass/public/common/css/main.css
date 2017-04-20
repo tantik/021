@@ -1604,13 +1604,16 @@ input, select {
       height: 100%;
       text-align: right; }
     .breadcrumbs li:last-child {
-      padding-right: 0;
-      margin-right: 0; }
+      padding-right: 0 !important;
+      margin-right: 0 !important; }
     .breadcrumbs li:last-child:after {
       display: none; }
   @media only screen and (max-width: 736px) {
     .breadcrumbs {
-      font-size: 11px; } }
+      font-size: 11px; }
+      .breadcrumbs li {
+        padding-right: 17px;
+        margin-right: 4px; } }
 
 h2.page-title {
   font: 500 30px/1.4 'Noto Sans JP', sans-serif;
@@ -1999,7 +2002,12 @@ select {
     background: #46b255;
     color: #fff;
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .button-send-holder input.btn-send:hover {
+      opacity: 0.8;
+      border-color: #46b255; }
   @media only screen and (max-width: 736px) {
     .button-send-holder {
       margin-bottom: 20px; }
