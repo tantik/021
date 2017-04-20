@@ -1068,6 +1068,12 @@ h2.page-title{
 			line-height: 32px;
 		}
 	}
+	&.profile{
+		background: url('../images/icon-profile.png') no-repeat 16px 50%;
+		@media only screen and (max-width: 736px) {
+			line-height: 32px;
+		}
+	}
 
 
 
@@ -1594,8 +1600,79 @@ select{
 		}
 	}
 }
-
-
+/* profile block */
+.profile-block{
+	margin-bottom: 20px;
+	overflow: hidden;
+	.table{
+		padding: 8px;
+		margin-bottom: 30px;
+		border: 1px solid #46b255;
+		table{
+			width: 100%;
+			border-collapse: collapse;
+			tr{
+				th,
+				td{
+					font: 300 16px/1.5 'Noto Sans JP', sans-serif;
+					border-top: 1px dotted #6c6c6c;
+					padding: 20px 10px 20px 20px;
+					text-align: left;
+				}
+				&:first-child th,
+				&:first-child td{
+					border: 0;
+				}
+				th{
+					padding-left: 18px;
+					width: 32%;
+					background: #f3f3f3;
+				}
+			}
+		}
+	}
+	.map{
+		border: 1px solid #46b255;
+		margin-bottom: 20px;
+		overflow: hidden;
+		iframe{
+			display: block;
+			width: 100% !important;
+			height: 369px !important;
+		}
+	}
+	@media only screen and (max-width: 736px) {
+		margin-bottom: 10px;
+		.table{
+			margin-bottom: 20px;
+			padding: 10px 10px 0;
+			table,
+			table tbody,
+			table tr,
+			table tr th,
+			table tr td{
+				display: block;
+				width: 100%;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			table tr th{
+				padding: 7px;
+				font-size: 15px;
+				border: 0;
+			}
+			table tr td{
+				padding: 10px 7px 30px;
+				font-size: 15px;
+				border: 0;
+			}
+		}
+		.map iframe{
+			height: 300px !important;
+		}
+	}
+}
 
 
 

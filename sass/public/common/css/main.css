@@ -1648,6 +1648,11 @@ h2.page-title {
     @media only screen and (max-width: 736px) {
       h2.page-title.sitemap {
         line-height: 32px; } }
+  h2.page-title.profile {
+    background: url("../images/icon-profile.png") no-repeat 16px 50%; }
+    @media only screen and (max-width: 736px) {
+      h2.page-title.profile {
+        line-height: 32px; } }
 
 /* customers list */
 .customers-list {
@@ -2086,5 +2091,62 @@ select {
       .site-map li {
         padding: 0 0 20px;
         width: 100%; } }
+
+/* profile block */
+.profile-block {
+  margin-bottom: 20px;
+  overflow: hidden; }
+  .profile-block .table {
+    padding: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #46b255; }
+    .profile-block .table table {
+      width: 100%;
+      border-collapse: collapse; }
+      .profile-block .table table tr th,
+      .profile-block .table table tr td {
+        font: 300 16px/1.5 'Noto Sans JP', sans-serif;
+        border-top: 1px dotted #6c6c6c;
+        padding: 20px 10px 20px 20px;
+        text-align: left; }
+      .profile-block .table table tr:first-child th,
+      .profile-block .table table tr:first-child td {
+        border: 0; }
+      .profile-block .table table tr th {
+        padding-left: 18px;
+        width: 32%;
+        background: #f3f3f3; }
+  .profile-block .map {
+    border: 1px solid #46b255;
+    margin-bottom: 20px;
+    overflow: hidden; }
+    .profile-block .map iframe {
+      display: block;
+      width: 100% !important;
+      height: 369px !important; }
+  @media only screen and (max-width: 736px) {
+    .profile-block {
+      margin-bottom: 10px; }
+      .profile-block .table {
+        margin-bottom: 20px;
+        padding: 10px 10px 0; }
+        .profile-block .table table,
+        .profile-block .table table tbody,
+        .profile-block .table table tr,
+        .profile-block .table table tr th,
+        .profile-block .table table tr td {
+          display: block;
+          width: 100%;
+          box-sizing: border-box; }
+        .profile-block .table table tr th {
+          padding: 7px;
+          font-size: 15px;
+          border: 0; }
+        .profile-block .table table tr td {
+          padding: 10px 7px 30px;
+          font-size: 15px;
+          border: 0; }
+      .profile-block .map iframe {
+        height: 300px !important; } }
 
 /* styles end */
