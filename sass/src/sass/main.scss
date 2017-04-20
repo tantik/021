@@ -139,6 +139,7 @@
 	.colums-list-promo{
 		overflow: hidden;
 		margin: 0 -10px;
+		&.promo2{margin-bottom: 10px;}
 		li{
 			@include box-sizing;
 			float: left;
@@ -163,6 +164,9 @@
 .banner{
 	overflow: hidden;
 	margin-bottom: 30px;
+	&.ban{
+		margin-bottom: 20px;
+	}
 	img{
 		display: block;
 		width: 100%;
@@ -1050,6 +1054,14 @@ h2.page-title{
 			background-size: 30px 22px;
 		}
 	}
+	&.pack{
+		background: url('../images/icon-pack.png') no-repeat 7px 50%;
+		@media only screen and (max-width: 736px) {
+			line-height: 32px;
+			-webkit-background-size: 32px 22px;
+			background-size: 32px 22px;
+		}
+	}
 
 
 
@@ -1507,6 +1519,14 @@ select{
 			line-height: 40px;
 			min-width: 200px;
 		}
+	}
+}
+.notes-txt{
+	margin-bottom: 18px;
+	font: 300 16px/1.4 'Noto Sans JP', sans-serif;
+	@media only screen and (max-width: 736px) {
+		font-size: 13px;
+		margin-bottom: 15px;
 	}
 }
 
