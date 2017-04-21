@@ -17,13 +17,13 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.30943596">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="640">
+                <state relative-caret-position="662">
                   <caret line="1767" column="20" lean-forward="true" selection-start-line="1767" selection-start-column="20" selection-end-line="1767" selection-end-column="20" />
                   <folding>
                     <element signature="e#13320#13839#0" expanded="false" />
@@ -61,12 +61,24 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/sass/helpers/_mixins.scss">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/contact_us/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="699">
-                  <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="14" />
+                <state relative-caret-position="288">
+                  <caret line="300" column="98" lean-forward="false" selection-start-line="300" selection-start-column="98" selection-end-line="300" selection-end-column="98" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/profile/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="596">
+                  <caret line="139" column="427" lean-forward="false" selection-start-line="139" selection-start-column="427" selection-end-line="139" selection-end-column="427" />
+                  <folding>
+                    <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -77,8 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.aside</find>
-      <find>パックメニュー</find>
       <find>お問い合わせ</find>
       <find>お客様の声</find>
       <find>会社案内</find>
@@ -107,6 +117,8 @@
       <find>space-between</find>
       <find>transition:</find>
       <find>transition</find>
+      <find>.construction-box</find>
+      <find>個人情報保護方針</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -118,10 +130,8 @@
         <option value="$PROJECT_DIR$/src/sass/layout/_header.scss" />
         <option value="$PROJECT_DIR$/src/customers_voice/index.html" />
         <option value="$PROJECT_DIR$/src/customers/index.html" />
-        <option value="$PROJECT_DIR$/src/contact_us/index.html" />
         <option value="$PROJECT_DIR$/src/sass/layout/_aside.scss" />
         <option value="$PROJECT_DIR$/src/pack/index.html" />
-        <option value="$PROJECT_DIR$/src/profile/index.html" />
         <option value="$PROJECT_DIR$/src/privacy_policy/index.html" />
         <option value="$PROJECT_DIR$/src/javascripts/main.js" />
         <option value="$PROJECT_DIR$/src/sass/helpers/_reset.scss" />
@@ -132,6 +142,8 @@
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/sass/helpers/_mixins.scss" />
         <option value="$PROJECT_DIR$/src/sass/main.scss" />
+        <option value="$PROJECT_DIR$/src/contact_us/index.html" />
+        <option value="$PROJECT_DIR$/src/profile/index.html" />
       </list>
     </option>
   </component>
@@ -211,7 +223,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="profile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="price" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contact_us" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -327,12 +375,12 @@
       <workItem from="1492522652090" duration="1207000" />
       <workItem from="1492589390045" duration="11710000" />
       <workItem from="1492672434796" duration="19574000" />
-      <workItem from="1492763918100" duration="20439000" />
+      <workItem from="1492763918100" duration="21062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110831000" />
+    <option name="totallyTimeSpent" value="111454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -574,29 +622,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/contact_us/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="40" column="57" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/customers/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="56" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/profile/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="226" column="36" lean-forward="false" selection-start-line="226" selection-start-column="36" selection-end-line="226" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -674,7 +704,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
+        <state relative-caret-position="662">
           <caret line="1767" column="20" lean-forward="true" selection-start-line="1767" selection-start-column="20" selection-end-line="1767" selection-end-column="20" />
           <folding>
             <element signature="e#13320#13839#0" expanded="false" />
@@ -683,6 +713,24 @@
             <element signature="e#16233#16438#0" expanded="false" />
             <element signature="e#16483#16908#0" expanded="false" />
             <element signature="e#16952#17806#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contact_us/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="300" column="98" lean-forward="false" selection-start-line="300" selection-start-column="98" selection-end-line="300" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/profile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="139" column="427" lean-forward="false" selection-start-line="139" selection-start-column="427" selection-end-line="139" selection-end-column="427" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
