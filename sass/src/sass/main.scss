@@ -226,6 +226,7 @@
 			color: #fff;
 			font-family: 'Noto Sans JP', sans-serif;
 			font-weight: 400;
+			&:hover{text-decoration: underline;}
 			&:after{
 				@include fade(all);
 				content: '';
