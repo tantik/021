@@ -1670,6 +1670,11 @@ h2.page-title {
       h2.page-title.faq {
         line-height: 32px;
         background-size: 30px 30px; } }
+  h2.page-title.price {
+    background: url("../images/icon-price.png") no-repeat 10px 50%; }
+    @media only screen and (max-width: 736px) {
+      h2.page-title.price {
+        line-height: 32px; } }
 
 /* customers list */
 .customers-list {
@@ -2057,6 +2062,9 @@ select {
 .notes-txt {
   margin-bottom: 18px;
   font: 300 16px/1.4 'Noto Sans JP', sans-serif; }
+  .notes-txt.txt2 {
+    line-height: 1.2;
+    margin: 0 0 15px 5px; }
   @media only screen and (max-width: 736px) {
     .notes-txt {
       font-size: 13px;
@@ -2367,6 +2375,138 @@ select {
             width: 20px;
             font-size: 18px;
             line-height: 20px; } }
+
+/* price table */
+.price-table {
+  margin-bottom: 30px;
+  padding: 8px;
+  border: 1px solid #46b255;
+  overflow: hidden; }
+  .price-table table {
+    width: 100%;
+    border-collapse: collapse; }
+    .price-table table tr th {
+      background: #f3f3f3;
+      font: 500 16px/23px 'Noto Sans JP', sans-serif;
+      padding: 13px 18px 13px 15px;
+      text-align: left; }
+      .price-table table tr th:last-child {
+        width: 110px;
+        padding-left: 0;
+        text-align: right; }
+    .price-table table tr td {
+      padding: 11px 18px 12px 15px;
+      font: 300 16px/24px 'Noto Sans JP', sans-serif;
+      border-top: 1px dotted #6c6c6c; }
+      .price-table table tr td:last-child {
+        width: 110px;
+        padding-left: 0;
+        text-align: right; }
+      .price-table table tr td h3 {
+        font: 300 16px/24px 'Noto Sans JP', sans-serif;
+        color: #46b255; }
+    .price-table table tr:nth-child(2) td {
+      padding-top: 15px;
+      border: 0; }
+  @media only screen and (max-width: 1000px) {
+    .price-table table tr th,
+    .price-table table tr td {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 12px 10px 12px 12px; } }
+  @media only screen and (max-width: 736px) {
+    .price-table {
+      padding: 10px;
+      margin-bottom: 20px; }
+      .price-table table tr th,
+      .price-table table tr td {
+        padding: 8px 5px;
+        font-size: 13px;
+        line-height: 18px; }
+        .price-table table tr th:last-child,
+        .price-table table tr td:last-child {
+          width: 90px; } }
+
+/* contact banner */
+.contact-banner {
+  margin-bottom: 30px;
+  border: 4px solid #46b255;
+  background: url("../images/bg-contact-banner.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  padding: 16px 20px 21px; }
+  .contact-banner h3 {
+    margin-bottom: 22px;
+    text-align: center;
+    font: 500 18px/1.66 'Noto Sans JP', sans-serif; }
+  .contact-banner .hold {
+    overflow: hidden; }
+    .contact-banner .hold .btn {
+      float: left;
+      width: 45%;
+      margin-right: 20px;
+      font: 500 22px/57px 'Noto Sans JP', sans-serif; }
+    .contact-banner .hold .phone-col {
+      overflow: hidden; }
+      .contact-banner .hold .phone-col .phone {
+        margin-bottom: 5px; }
+        .contact-banner .hold .phone-col .phone a {
+          display: inline-block;
+          vertical-align: top;
+          padding-left: 40px;
+          font: 500 40px/36px 'Noto Sans JP', sans-serif;
+          color: #46b255;
+          background: url("../images/ico-phone-banner.png") no-repeat 0 50%;
+          opacity: 1;
+          -webkit-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease; }
+          .contact-banner .hold .phone-col .phone a:hover {
+            opacity: 0.8; }
+      .contact-banner .hold .phone-col .small {
+        display: block;
+        font: 400 14px/1.2 'Noto Sans JP', sans-serif;
+        margin: 0 12% 0 0;
+        text-align: right; }
+  @media only screen and (max-width: 1000px) {
+    .contact-banner {
+      padding: 15px 10px; }
+      .contact-banner h3 {
+        font-size: 16px;
+        margin-bottom: 15px; }
+      .contact-banner .hold .btn {
+        font-size: 18px;
+        line-height: 50px;
+        margin-right: 15px; }
+      .contact-banner .hold .phone-col .phone a {
+        font-size: 28px;
+        line-height: 30px;
+        padding-left: 37px;
+        background-size: 30px 30px;
+        letter-spacing: -0.5px; }
+      .contact-banner .hold .phone-col .small {
+        margin-right: 5%;
+        font-size: 12px; } }
+  @media only screen and (max-width: 736px) {
+    .contact-banner {
+      padding: 10px;
+      border-weight: 2px;
+      margin-bottom: 20px; }
+      .contact-banner h3 {
+        font-size: 13px;
+        line-height: 1.4; }
+      .contact-banner .hold {
+        text-align: center; }
+        .contact-banner .hold .btn {
+          display: inline-block;
+          vertical-align: top;
+          width: 70%;
+          margin-bottom: 20px;
+          float: none; }
+        .contact-banner .hold .phone-col .phone {
+          margin-bottom: 5px; }
+        .contact-banner .hold .phone-col .small {
+          margin: 0 0 5px;
+          text-align: center;
+          font-size: 11px; } }
 
 /* popups */
 .fader {
