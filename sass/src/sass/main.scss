@@ -1088,6 +1088,14 @@ h2.page-title{
 			background-size: 30px 30px;
 		}
 	}
+	&.faq{
+		background: url('../images/icon-faq.png') no-repeat 8px 50%;
+		@media only screen and (max-width: 736px) {
+			line-height: 32px;
+			-webkit-background-size: 30px 30px;
+			background-size: 30px 30px;
+		}
+	}
 
 
 
@@ -1865,6 +1873,87 @@ select{
 		font-size: 20px;
 	}
 }
+/* faq list */
+.faq-list{
+	list-style: none;
+	li{
+		margin-bottom: 20px;
+		border: 1px solid #46b255;
+		font: 300 16px/24px 'Noto Sans JP', sans-serif;
+		overflow: hidden;
+		.q,
+		.a{
+			padding: 18px 12px 23px 15px;
+			overflow: hidden;
+		}
+		.q{
+			padding: 12px 12px 12px 15px;
+			background: #f3f3f3;
+			overflow: hidden;
+		}
+		.ttl{
+			width: 26px;
+			float: left;
+			font: 500  20px/24px 'Noto Sans JP', sans-serif;
+			color: #46b255;
+		}
+		.a .ttl{
+			color: #f3ab21;
+		}
+		p{
+			display: block;
+			overflow: hidden;
+		}
+		p a{
+			text-decoration: underline;
+			color: #333;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	@media only screen and (max-width: 736px) {
+		margin-bottom: 30px;
+		li{
+			margin-bottom: 10px;
+			font-size: 13px;
+			line-height: 20px;
+			.q,
+			.a{
+				padding: 10px 10px 10px 10px;
+				.ttl{
+					width: 20px;
+					font-size: 18px;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1942,19 +2031,4 @@ select{
 		width: 92vw;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* styles end */
