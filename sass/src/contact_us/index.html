@@ -154,23 +154,23 @@
 												<td>
 													<ul class="check-list">
 														<li>
-															<input id="check06" tabindex="6" type="checkbox" name="item[]" value="1⽇〜3⽇以内" />
+															<input id="check06" tabindex="6" type="checkbox" name="item2[]" value="1⽇〜3⽇以内" />
 															<label for="check06">1⽇〜3⽇以内</label>
 														</li>
 														<li>
-															<input id="check07" tabindex="7" type="checkbox" name="item[]" value="1週間後" />
+															<input id="check07" tabindex="7" type="checkbox" name="item2[]" value="1週間後" />
 															<label for="check07">1週間後</label>
 														</li>
 														<li>
-															<input id="check08" tabindex="8" type="checkbox" name="item[]" value="2週間後" />
+															<input id="check08" tabindex="8" type="checkbox" name="item2[]" value="2週間後" />
 															<label for="check08">2週間後</label>
 														</li>
 														<li>
-															<input id="check09" tabindex="9" type="checkbox" name="item[]" value="3週間後" />
+															<input id="check09" tabindex="9" type="checkbox" name="item2[]" value="3週間後" />
 															<label for="check09">3週間後</label>
 														</li>
 														<li>
-															<input id="check010" tabindex="10" type="checkbox" name="item[]" value="1ヶ月後" />
+															<input id="check010" tabindex="10" type="checkbox" name="item2[]" value="1ヶ月後" />
 															<label for="check010">1ヶ月後</label>
 														</li>
 													</ul>
@@ -311,8 +311,9 @@
 
 									evt.preventDefault();
 
-									if(!$('#check04')[0].checked)
-										return false;
+									if(!$('#check11')[0].checked) {
+                                        return false;
+                                    }
 
 									var http = new XMLHttpRequest(), f = this, formData;
 									evt.preventDefault();
