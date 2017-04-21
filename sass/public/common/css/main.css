@@ -7,19 +7,19 @@
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 300;
-  src: local("Noto Sans CJK JP"), url(../common/fonts/NotoSansJP-Light.woff2) format("woff2"), url(../common/fonts/NotoSansJP-Light.woff) format("woff"), url(../common/fonts/NotoSansJP-Light.otf) format("opentype"); }
+  src: local("Noto Sans CJK JP"), url(../fonts/NotoSansJP-Light.woff2) format("woff2"), url(../fonts/NotoSansJP-Light.woff) format("woff"), url(../fonts/NotoSansJP-Light.otf) format("opentype"); }
 
 @font-face {
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
-  src: local("Noto Sans CJK JP"), url(../fonts/common/NotoSansJP-Regular.woff2) format("woff2"), url(../fonts/common/NotoSansJP-Regular.woff) format("woff"), url(../fonts/common/NotoSansJP-Regular.otf) format("opentype"); }
+  src: local("Noto Sans CJK JP"), url(../fonts/NotoSansJP-Regular.woff2) format("woff2"), url(../fonts/NotoSansJP-Regular.woff) format("woff"), url(../fonts/NotoSansJP-Regular.otf) format("opentype"); }
 
 @font-face {
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 500;
-  src: local("Noto Sans CJK JP"), url(../fonts/common/NotoSansJP-Medium.woff2) format("woff2"), url(../fonts/common/NotoSansJP-Medium.woff) format("woff"), url(../fonts/common/NotoSansJP-Medium.otf) format("opentype"); }
+  src: local("Noto Sans CJK JP"), url(../fonts/NotoSansJP-Medium.woff2) format("woff2"), url(../fonts/NotoSansJP-Medium.woff) format("woff"), url(../fonts/NotoSansJP-Medium.otf) format("opentype"); }
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
@@ -1658,6 +1658,12 @@ h2.page-title {
     @media only screen and (max-width: 736px) {
       h2.page-title.privacy {
         line-height: 32px; } }
+  h2.page-title.construction {
+    background: url("../images/icon-construction.png") no-repeat 0 50%; }
+    @media only screen and (max-width: 736px) {
+      h2.page-title.construction {
+        line-height: 32px;
+        background-size: 30px 30px; } }
 
 /* customers list */
 .customers-list {
@@ -2183,5 +2189,184 @@ select {
           margin-bottom: 15px; }
       .privacy-block h3 {
         font-size: 13px; } }
+
+/* construction box */
+.construction-box {
+  margin-bottom: 25px;
+  padding: 20px;
+  border: 1px solid #46b255;
+  overflow: hidden; }
+  .construction-box .image-list {
+    list-style: none;
+    position: relative;
+    margin-bottom: 25px;
+    -display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .construction-box .image-list li {
+      width: 30.4%; }
+      .construction-box .image-list li a {
+        display: block;
+        position: relative;
+        color: #333; }
+        .construction-box .image-list li a:before {
+          content: '';
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          opacity: 0;
+          -webkit-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease; }
+        .construction-box .image-list li a .hover-text {
+          position: absolute;
+          z-index: 3;
+          top: 50%;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          font: 500 14/1.2 'Noto Sans JP', sans-serif;
+          color: #fff;
+          opacity: 0;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          -webkit-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease; }
+        .construction-box .image-list li a:hover:before {
+          opacity: 1; }
+        .construction-box .image-list li a:hover .hover-text {
+          opacity: 1; }
+      .construction-box .image-list li .image {
+        display: block;
+        margin-bottom: 2px; }
+        .construction-box .image-list li .image img {
+          display: block;
+          width: 100%; }
+      .construction-box .image-list li h3 {
+        font: 300 16px/1.4 'Noto Sans JP', sans-serif;
+        text-align: center; }
+    .construction-box .image-list:before, .construction-box .image-list:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 32.3%;
+      width: 10px;
+      height: 14px;
+      margin: -20px 0 0 -5px;
+      background: url("../images/arrow-right.png") no-repeat;
+      overflow: hidden; }
+    .construction-box .image-list:after {
+      left: 67.4%; }
+  .construction-box .info {
+    width: 100%;
+    border-collapse: collapse; }
+    .construction-box .info tr th,
+    .construction-box .info tr td {
+      padding: 12px 20px 12px 13px;
+      font: 300 16px/1.5 'Noto Sans JP', sans-serif;
+      text-align: left; }
+    .construction-box .info tr th {
+      width: 110px;
+      font-weight: 400;
+      padding-right: 0; }
+    .construction-box .info tr:nth-child(odd) th,
+    .construction-box .info tr:nth-child(odd) td {
+      background: #f3f3f3; }
+  @media only screen and (max-width: 736px) {
+    .construction-box {
+      padding: 10px;
+      margin-bottom: 20px; }
+      .construction-box .image-list {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin-bottom: 10px; }
+        .construction-box .image-list:after, .construction-box .image-list:before {
+          display: none; }
+        .construction-box .image-list li {
+          width: 100%;
+          margin-bottom: 20px; }
+          .construction-box .image-list li h3 {
+            font-size: 13px; }
+      .construction-box .info tr th,
+      .construction-box .info tr td {
+        padding: 7px 10px;
+        font-size: 13px;
+        line-height: 1.4; }
+      .construction-box .info tr th {
+        padding-right: 0;
+        width: 30%; } }
+
+.items {
+  margin: 88px 0 78px;
+  text-align: center;
+  font: 300 30px/1.4 'Noto Sans JP', sans-serif; }
+  @media only screen and (max-width: 1000px) {
+    .items {
+      margin: 60px 0; } }
+  @media only screen and (max-width: 736px) {
+    .items {
+      margin: 40px 0;
+      font-size: 20px; } }
+
+/* popups */
+.fader {
+  position: fixed;
+  left: -100%;
+  top: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(119, 119, 119, 0.7);
+  opacity: 0;
+  z-index: 980;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease; }
+  .fader.visible {
+    left: 0;
+    opacity: 1; }
+
+.popup {
+  left: -100% !important;
+  position: absolute;
+  top: 50%;
+  z-index: 985;
+  width: 96vw;
+  opacity: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  background: #fff; }
+  .popup .hold {
+    padding: 10px;
+    overflow: hidden; }
+    .popup .hold img {
+      display: block;
+      width: 100%; }
+  .popup .popup-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/btn-close-popup.png") no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease; }
+    .popup .popup-close:hover {
+      opacity: 0.5; }
+  .popup.visible {
+    left: 50% !important;
+    opacity: 1; }
+  @media only screen and (max-width: 736px) {
+    .popup {
+      width: 92vw; } }
 
 /* styles end */

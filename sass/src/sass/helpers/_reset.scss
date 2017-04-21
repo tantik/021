@@ -5,27 +5,27 @@
 	font-style: normal;
 	font-weight: 300;
 	src: local("Noto Sans CJK JP"),
-	url(../common/fonts/NotoSansJP-Light.woff2) format('woff2'),
-	url(../common/fonts/NotoSansJP-Light.woff) format('woff'),
-	url(../common/fonts/NotoSansJP-Light.otf) format('opentype');
+	url(../fonts/NotoSansJP-Light.woff2) format('woff2'),
+	url(../fonts/NotoSansJP-Light.woff) format('woff'),
+	url(../fonts/NotoSansJP-Light.otf) format('opentype');
 }
 @font-face {
 	font-family: 'Noto Sans JP';
 	font-style: normal;
 	font-weight: 400;
 	src: local("Noto Sans CJK JP"),
-	url(../fonts/common/NotoSansJP-Regular.woff2) format('woff2'),
-	url(../fonts/common/NotoSansJP-Regular.woff) format('woff'),
-	url(../fonts/common/NotoSansJP-Regular.otf) format('opentype');
+	url(../fonts/NotoSansJP-Regular.woff2) format('woff2'),
+	url(../fonts/NotoSansJP-Regular.woff) format('woff'),
+	url(../fonts/NotoSansJP-Regular.otf) format('opentype');
 }
 @font-face {
 	font-family: 'Noto Sans JP';
 	font-style: normal;
 	font-weight: 500;
 	src: local("Noto Sans CJK JP"),
-	url(../fonts/common/NotoSansJP-Medium.woff2) format('woff2'),
-	url(../fonts/common/NotoSansJP-Medium.woff) format('woff'),
-	url(../fonts/common/NotoSansJP-Medium.otf) format('opentype');
+	url(../fonts/NotoSansJP-Medium.woff2) format('woff2'),
+	url(../fonts/NotoSansJP-Medium.woff) format('woff'),
+	url(../fonts/NotoSansJP-Medium.otf) format('opentype');
 }
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
 	margin: 0;
