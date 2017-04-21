@@ -31,11 +31,7 @@
 	color: #fff;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 400;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+	@include fade(all);
 	&:hover{
 		opacity: 0.8;
 		background: #f3ab21;
@@ -466,6 +462,12 @@
 				font-family: 'Noto Sans JP', sans-serif;
 				font-weight: 400;
 				margin: 0;
+				a{
+					color: #333;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
 			}
 		}
 	}
@@ -635,10 +637,7 @@
 					-moz-justify-content: center;
 					-ms-justify-content: center;
 					justify-content: center;
-					-moz-box-sizing:border-box;
-					-ms-box-sizing:border-box;
-					-webkit-box-sizing:border-box;
-					box-sizing:border-box;
+					@include box-sizing;
 					width: 100%;
 					padding: 8px 6px;
 					h4{
@@ -980,7 +979,6 @@
 		}
 	}
 }
-
 .heading-row{
 	background: #f3f2ee;
 	padding: 13px 0 24px;
@@ -1204,10 +1202,7 @@ h2.page-title{
 			line-height: 34px;
 			color: #999;
 			background: #f3f2ee;
-			-webkit-transition: all 0.5s ease;
-			-moz-transition: all 0.5s ease;
-			-o-transition: all 0.5s ease;
-			transition: all 0.5s ease;
+			@include fade(all);
 		}
 	}
 	li.current a,
@@ -1329,9 +1324,7 @@ h2.page-title{
 					th{
 						display: block;
 						width: 100%;
-						-webkit-box-sizing: border-box;
-						-moz-box-sizing: border-box;
-						box-sizing: border-box;
+						@include box-sizing;
 						padding: 7px;
 						border: 0;
 						font-size: 15px;
@@ -1364,9 +1357,7 @@ textarea{
 	font: 300 17px/23px 'Noto Sans JP', sans-serif;
 	height: 35px;
 	padding: 5px 10px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	@include box-sizing;
 	outline: none;
 	&.short{
 		width: 193px;
@@ -1396,9 +1387,7 @@ select{
 	-moz-border-radius: 0;
 	border-radius: 0;
 	padding: 0 25px 0 10px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	@include box-sizing;
 	background: #f7f7f7 url('../images/arrow-select.png') no-repeat 100% 50%;
 	@media only screen and (max-width: 736px) {
 		font-size: 15px;
@@ -1539,10 +1528,7 @@ select{
 		color: #fff;
 		outline: none;
 		cursor: pointer;
-		-webkit-transition: all 0.5s ease;
-		-moz-transition: all 0.5s ease;
-		-o-transition: all 0.5s ease;
-		transition: all 0.5s ease;
+		@include fade(all);
 		&:hover{
 			opacity: 0.8;
 			border-color: #46b255;
@@ -1575,30 +1561,24 @@ select{
 	margin-bottom: 40px;
 	padding: 43px 30px 5px 60px;
 	border: 1px solid #46b255;
-	display: flex;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
+	@include box-flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	font: 300 16px/24px 'Noto Sans JP', sans-serif;
 	overflow: hidden;
 	li{
 		padding: 0 10px 40px 0;
 		width: 50%;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
+		@include box-sizing;
 		a{
 			display: inline-block;
 			vertical-align: top;
 			padding-left: 18px;
 			position: relative;
 			color: #333;
-			-webkit-transition: opacity 0.5s ease;
-			-moz-transition: opacity 0.5s ease;
-			-o-transition: opacity 0.5s ease;
-			transition: opacity 0.5s ease;
+			@include fade(opacity);
 			&:after{
 				content: '';
 				position: absolute;
@@ -1678,9 +1658,7 @@ select{
 			table tr td{
 				display: block;
 				width: 100%;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
+				@include box-sizing;
 			}
 			table tr th{
 				padding: 7px;
@@ -1747,7 +1725,7 @@ select{
 		position: relative;
 		margin-bottom: 25px;
 		@include box-flex;
-		justify-content: space-between;
+		@include space-between;
 		li{
 			width: 30.4%;
 			a{
@@ -1773,7 +1751,7 @@ select{
 					left: 0;
 					width: 100%;
 					text-align: center;
-					font: 500 14/1.2 'Noto Sans JP', sans-serif;
+					font: 500 14px/1.2 'Noto Sans JP', sans-serif;
 					color: #fff;
 					opacity: 0;
 					-webkit-transform:translateY(-50%);
@@ -1838,6 +1816,9 @@ select{
 		padding: 10px;
 		margin-bottom: 20px;
 		.image-list{
+			-webkit-flex-wrap: wrap;
+			-moz-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
 			margin-bottom: 10px;
 			&:after,
@@ -2085,7 +2066,7 @@ select{
 	}
 	@media only screen and (max-width: 736px) {
 		padding: 10px;
-		border-weight: 2px;
+		border-width: 2px;
 		margin-bottom: 20px;
 		h3{
 			font-size: 13px;

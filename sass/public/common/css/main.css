@@ -755,8 +755,8 @@ input, select {
   color: #fff;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
   .btn:hover {
     opacity: 0.8;
     background: #f3ab21;
@@ -1127,6 +1127,10 @@ input, select {
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
         margin: 0; }
+        .customer-voice-list li .text-info p a {
+          color: #333; }
+          .customer-voice-list li .text-info p a:hover {
+            text-decoration: underline; }
   @media only screen and (max-width: 736px) {
     .customer-voice-list {
       padding: 0 10px; }
@@ -1857,6 +1861,7 @@ h2.page-title {
           .form .table table tr th {
             display: block;
             width: 100%;
+            -ms-box-sizing: border-box;
             box-sizing: border-box;
             padding: 7px;
             border: 0;
@@ -1882,6 +1887,7 @@ textarea {
   font: 300 17px/23px 'Noto Sans JP', sans-serif;
   height: 35px;
   padding: 5px 10px;
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
   outline: none; }
   input.text.short,
@@ -1919,6 +1925,7 @@ select {
   height: 35px;
   border-radius: 0;
   padding: 0 25px 0 10px;
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
   background: #f7f7f7 url("../images/arrow-select.png") no-repeat 100% 50%; }
   @media only screen and (max-width: 736px) {
@@ -2076,17 +2083,18 @@ select {
   margin-bottom: 40px;
   padding: 43px 30px 5px 60px;
   border: 1px solid #46b255;
-  display: flex;
-  display: -webkit-box;
+  -display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
+  display: -webkit-box;
+  display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   font: 300 16px/24px 'Noto Sans JP', sans-serif;
   overflow: hidden; }
   .site-map li {
     padding: 0 10px 40px 0;
     width: 50%;
+    -ms-box-sizing: border-box;
     box-sizing: border-box; }
     .site-map li a {
       display: inline-block;
@@ -2162,6 +2170,7 @@ select {
         .profile-block .table table tr td {
           display: block;
           width: 100%;
+          -ms-box-sizing: border-box;
           box-sizing: border-box; }
         .profile-block .table table tr th {
           padding: 7px;
@@ -2218,6 +2227,8 @@ select {
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
@@ -2246,7 +2257,7 @@ select {
           left: 0;
           width: 100%;
           text-align: center;
-          font: 500 14/1.2 'Noto Sans JP', sans-serif;
+          font: 500 14px/1.2 'Noto Sans JP', sans-serif;
           color: #fff;
           opacity: 0;
           -webkit-transform: translateY(-50%);
@@ -2299,7 +2310,7 @@ select {
       margin-bottom: 20px; }
       .construction-box .image-list {
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
         margin-bottom: 10px; }
         .construction-box .image-list:after, .construction-box .image-list:before {
           display: none; }
@@ -2488,7 +2499,7 @@ select {
   @media only screen and (max-width: 736px) {
     .contact-banner {
       padding: 10px;
-      border-weight: 2px;
+      border-width: 2px;
       margin-bottom: 20px; }
       .contact-banner h3 {
         font-size: 13px;
