@@ -8,6 +8,15 @@ function initPage(){
 	mobileMenu();
 	initPopup();
 	swiperGallery();
+	initLink();
+}
+function initLink(){
+	$('.anhor-link').click(function(){
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+		top = $(id).offset().top - 167;
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
 }
 var allGallery = {}
 function swiperGallery(){
