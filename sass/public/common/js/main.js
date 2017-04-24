@@ -9,7 +9,21 @@ function initPage(){
 	initPopup();
 	swiperGallery();
 	initLink();
+	setTimeout(OnScroll,300);
 }
+if(window.location.hash){
+	window.hash = window.location.hash.substr(1);
+	window.location.hash = '';
+}
+
+function OnScroll() {
+	if (window.hash) {
+		var minus = $('#header').height();
+		var scrollPos = $('#'+window.hash).offset().top ;
+		$("html, body").animate({ scrollTop: scrollPos - minus }, 1000);
+	}
+};
+
 function initLink(){
 	$('.anhor-link').click(function(){
 		event.preventDefault();
