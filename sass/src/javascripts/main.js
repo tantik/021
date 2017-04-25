@@ -25,8 +25,8 @@ function OnScroll() {
 };
 
 function initLink(){
-	$('.anhor-link').click(function(){
-		event.preventDefault();
+	$('.anhor-link').click(function(e){
+		e.preventDefault();
 		var id  = $(this).attr('href'),
 		top = $(id).offset().top - 167;
 		$('body,html').animate({scrollTop: top}, 1500);
