@@ -10,7 +10,22 @@ function initPage(){
 	swiperGallery();
 	initLink();
 	setTimeout(OnScroll,300);
+	initCheckForm();
 }
+
+function initCheckForm(){
+	if($('.required-checkboxes')) {
+		var requiredCheckboxes = $('.required-checkboxes :checkbox[required]');
+		requiredCheckboxes.change(function(){
+			if(requiredCheckboxes.is(':checked')) {
+				requiredCheckboxes.removeAttr('required');
+			} else {
+				requiredCheckboxes.attr('required', 'required');
+			}
+		});
+	};
+}
+
 if(window.location.hash){
 	window.hash = window.location.hash.substr(1);
 	window.location.hash = '';
