@@ -2170,6 +2170,11 @@ select {
   border: 1px solid #46b255;
   font: 400 16px/30px 'Noto Sans JP', sans-serif;
   overflow: hidden; }
+  .privacy-block .sp {
+    display: none !important; }
+  .privacy-block .pc {
+    display: inline-block !important;
+    vertical-align: top; }
   .privacy-block p {
     margin: 0 0 30px; }
     .privacy-block p.last {
@@ -2186,6 +2191,11 @@ select {
       padding: 10px 10px 0;
       font-size: 13px;
       line-height: 20px; }
+      .privacy-block .pc {
+        display: none !important; }
+      .privacy-block .sp {
+        display: inline-block !important;
+        vertical-align: top; }
       .privacy-block p {
         margin-bottom: 20px; }
         .privacy-block p.last {

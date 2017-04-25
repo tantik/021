@@ -33,7 +33,7 @@ if ($_POST['upflg'] == 1) {
     }
 
     $item =  substr($item, 0, -2);
-    $item2 =  substr($item, 0, -2);
+    $item2 =  substr($item2, 0, -2);
 
     /*************************************************
     //ファイルアップロード関連
@@ -87,6 +87,7 @@ if ($_POST['upflg'] == 1) {
     //$mailto   = "ikai@vizan.co.jp";
     //$mailto   = "nightmare0618@yahoo.co.jp";
     $mailto  = "r-goto@re-eight.com";
+
 
 
     /* エンドユーザー返信メール末尾の案件アドレス */

@@ -1683,6 +1683,11 @@ select{
 	padding: 23px 20px 0;
 	border: 1px solid #46b255;
 	font: 400 16px/30px 'Noto Sans JP', sans-serif;
+	.sp{display: none !important;}
+	.pc{
+		display: inline-block !important;
+		vertical-align: top;
+	}
 	overflow: hidden;
 	p{
 		margin: 0 0 30px;
@@ -1701,6 +1706,11 @@ select{
 		}
 	}
 	@media only screen and (max-width: 736px) {
+		.pc{display: none !important;}
+		.sp{
+			display: inline-block !important;
+			vertical-align: top;
+		}
 		padding: 10px 10px 0;
 		font-size: 13px;
 		line-height: 20px;

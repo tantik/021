@@ -127,25 +127,25 @@
 											<tr>
 												<th>お問い合わせ項目 <i>必須</i></th>
 												<td>
-													<ul class="check-list">
+													<ul class="check-list required-checkboxes">
 														<li>
-															<input id="check01" tabindex="1" type="checkbox" name="item[]" value="サービスについて" />
+															<input required id="check01" tabindex="1" type="checkbox" name="item[]" value="サービスについて" />
 															<label for="check01">サービスについて</label>
 														</li>
 														<li>
-															<input id="check02" tabindex="2" type="checkbox" name="item[]" value="料金について" />
+															<input required id="check02" tabindex="2" type="checkbox" name="item[]" value="料金について" />
 															<label for="check02">料金について</label>
 														</li>
 														<li>
-															<input id="check03" tabindex="3" type="checkbox" name="item[]" value="無料相談" />
+															<input required id="check03" tabindex="3" type="checkbox" name="item[]" value="無料相談" />
 															<label for="check03">無料相談</label>
 														</li>
 														<li>
-															<input id="check04" tabindex="4" type="checkbox" name="item[]" value="見積り" />
+															<input required id="check04" tabindex="4" type="checkbox" name="item[]" value="見積り" />
 															<label for="check04">見積り</label>
 														</li>
 														<li>
-															<input id="check05" tabindex="5" type="checkbox" name="item[]" value="依頼" />
+															<input required id="check05" tabindex="5" type="checkbox" name="item[]" value="依頼" />
 															<label for="check05">依頼</label>
 														</li>
 													</ul>
@@ -207,7 +207,7 @@
 													<label class="mid" for="input04">電話番号</label>
 												</th>
 												<td>
-													<input required name="tel" tabindex="14" id="input04" class="text" type="tel" placeholder="000-000-000" value="" />
+													<input name="tel" tabindex="14" id="input04" class="text" type="tel" placeholder="000-000-000" value="" />
 												</td>
 											</tr>
 											<tr>
@@ -227,8 +227,8 @@
 												</th>
 												<td>
 													<div class="select">
-														<select name="add" tabindex="16" id="select">
-															<option selected="selected">選択してください</option>
+														<select required name="add" tabindex="16" id="select">
+															<option selected="selected" value="">選択してください</option>
 															<option value="北海道">北海道</option>
 															<option value="青森県">青森県</option>
 															<option value="岩手県">岩手県</option>
@@ -285,7 +285,7 @@
 													<label class="mid" for="input06">住所</label>
 												</th>
 												<td>
-													<input required name="address" tabindex="17" id="input06" class="text" type="text" placeholder="京都市南区上鳥羽那須野町21-4" value="" />
+													<input name="address" tabindex="17" id="input06" class="text" type="text" placeholder="京都市南区上鳥羽那須野町21-4" value="" />
 												</td>
 											</tr>
 											<tr>
@@ -293,13 +293,13 @@
 													<label class="mid" for="comment">お問い合わせ内容 <i>必須</i></label>
 												</th>
 												<td>
-													<textarea name="msg" tabindex="19" accesskey="x" placeholder="お問い合わせ内容をご入力ください" id="comment" cols="30" rows="10" aria-invalid="false"></textarea>
+													<textarea required name="msg" tabindex="19" accesskey="x" placeholder="お問い合わせ内容をご入力ください" id="comment" cols="30" rows="10" aria-invalid="false"></textarea>
 												</td>
 											</tr>
 										</table>
 									</div>
 									<div class="check-row">
-										<input tabindex="19" id="check11" type="checkbox" value="" />
+										<input required tabindex="19" id="check11" type="checkbox" value="" />
 										<label for="check11"><a href="../privacypolicy">個人情報保護方針</a>に同意する</label>
 									</div>
 									<div class="button-send-holder">
