@@ -78,20 +78,18 @@ if ($_POST['upflg'] == 1) {
     ------------------------------------------------------------ */
 
     /* 件名、本文冒頭 */
-    $mail_title = "■■■";
+    $mail_title = "関西エアコンセンター";
     //$mail_title = $passmaster_array['hptitle'];
 
     /* クライアントメールアドレス */
     //$mailto   = "system@extlink.co.jp";
     //$mailto = $infomail;
-    //$mailto   = "ikai@vizan.co.jp";
-    //$mailto   = "nightmare0618@yahoo.co.jp";
-    $mailto  = "r-goto@re-eight.com";
+    $mailto  = "info@kansai-aircon.com";
 
 
 
     /* エンドユーザー返信メール末尾の案件アドレス */
-    $site_url_mail = "http://site-one.net/esite/●●●/";
+    $site_url_mail = "http://kansai-aircon.com";
     //$site_url_mail = $site_url;
 
     /* --------------------------------------------------------- */
