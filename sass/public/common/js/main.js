@@ -42,8 +42,9 @@ function OnScroll() {
 function initLink(){
 	$('.anhor-link').click(function(e){
 		e.preventDefault();
+		var minus = $('#header').height();
 		var id  = $(this).attr('href'),
-		top = $(id).offset().top - 167;
+		top = $(id).offset().top - minus;
 		$('body,html').animate({scrollTop: top}, 1500);
 	});
 }

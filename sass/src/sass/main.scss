@@ -1420,10 +1420,10 @@ select{
 			overflow: hidden;
 		}
 	}
-	input[type="checkbox"]:checked + label:after{
+	input:checked + label:after{
 		background-position: 0 -20px;
 	}
-	input[type="checkbox"]{
+	input{
 		-webkit-appearance: none;
 		appearance: none;
 		margin: 0;
@@ -2126,7 +2126,8 @@ select{
 	position: absolute;
 	top: 50%;
 	z-index: 985;
-	width: 96vw;
+	width: 94vw;
+	max-width: 600px;
 	opacity: 0;
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
 	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
